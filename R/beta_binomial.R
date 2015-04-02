@@ -1,5 +1,22 @@
-# Beta-Binomial test for testing allele specific expression
-# using multiple samples
+#' Beta-Binomial test for testing allele specific expression
+#' using multiple samples
+#' 
+#' A more detailed description of what the function is and how
+#' it works. It may be a paragraph that should not be separated
+#' by any spaces. 
+#'
+#' @param inputParameter1 A description of the input parameter \code{inputParameter1}
+#' @param inputParameter2 A description of the input parameter \code{inputParameter2}
+#'
+#' @return output A description of the object the function outputs 
+#'
+#' @keywords keywords
+#'
+#' @export
+#' 
+#' @examples
+#' R code here showing how your function works
+
 
 dbetabinom <- function(alpha,beta,hi,tot) {
   #copied from http://en.wikipedia.org/wiki/Beta-binomial_distribution
