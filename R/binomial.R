@@ -4,7 +4,7 @@
 #' it works. It may be a paragraph that should not be separated
 #' by any spaces. 
 #'
-#' @param inputParameter1 A description of the input parameter \code{inputParameter1}
+#' @param data matrix with first column one of the allele counts and the second column total allele \code{inputParameter1}
 #' @param inputParameter2 A description of the input parameter \code{inputParameter2}
 #'
 #' @return output A description of the object the function outputs 
@@ -16,10 +16,10 @@
 #' @examples
 #' R code here showing how your function works
 
-single.sample.binomial <- function(data_mat){
+binomial <- function(data_mat){
      pvals = apply(data_mat,1,
              function(x){binom.test(round(x[1]),round(x[2]),alternative="two.sided")$p.value})
-     return(pvals
+     return(pvals)
 }
 
 #nodSum.np= apply(nodCnt.np,1,sum)
