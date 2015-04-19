@@ -1,4 +1,21 @@
-myloglik <- function(alpha,beta, his, tots) {
+#' A function to compute log liklihood for beta binomial model
+#'
+#' A more detailed description of what the function is and how
+#' it works. It may be a paragraph that should not be separated
+#' by any spaces.
+#'
+#' @param data matrix with first column one of the allele counts and the second column total allele \code{inputParameter1}
+#' @param inputParameter2 A description of the input parameter \code{inputParameter2}
+#'
+#' @return output A description of the object the function outputs
+#'
+#' @keywords keywords
+#'
+#' @export
+#'
+#' @examples
+#' R code here showing how your function works
+log_liklihood <- function(alpha,beta, his, tots) {
   # just sum the log-densities
   cntTab = cbind(his,tots)
   #sum(dbetabinom(alpha,beta, k, n=2000))

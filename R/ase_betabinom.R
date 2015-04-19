@@ -12,4 +12,3 @@ aseByBetaBinom <- function(dataMat,totMat){
   }
   return(pvals)
 }
-~
